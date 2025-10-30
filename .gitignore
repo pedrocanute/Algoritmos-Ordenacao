@@ -7,6 +7,26 @@
 *.obj
 *.elf
 
+*.nupkg
+/packages/
+*.log
+
+
+# Pastas de compilação (Build)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Arquivos de usuário do Visual Studio
+*.user
+
+# Visual Studio specific
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
 # Linker output
 *.ilk
 *.map
@@ -53,3 +73,5 @@ dkms.conf
 
 # debug information files
 *.dwo
+/Projeto 1904/allegro.log
+/Projeto 1904/allegro.log
