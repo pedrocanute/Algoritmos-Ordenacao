@@ -14,26 +14,35 @@ void bubble_sort(int array[], int n) {
 				array[j + 1] = temporario;
 				trocou = 1;
 			}
+			
 		}
+		for (int k = 0; k < n; k++) {
+			printf("%d ", array[k]);
+		}
+		printf("\n");
 		if (trocou == 0) break;
 	}
+
+	
+
 }
 
 int main() {
 
-	int array[20];
+	int array[6];
 	srand(time(NULL));
 	printf("Array Original:\n");
-	for (int i = 0; i < 20; i++) {
+	for (int i = 0; i < 6; i++) {
 		array[i] = rand() % 21;
 		printf("%d ", array[i]);
 	}
+	printf("\n");
+	bubble_sort(array, 6);
 
-	bubble_sort(array, 20);
 	printf("\n\n");
 	printf("Array Ordenado:\n");
 
-	for (int i = 0; i < 20; i++) {
+	for (int i = 0; i < 6; i++) {
 		printf("%d ", array[i]);
 	}
 	return 0;
